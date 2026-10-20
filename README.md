@@ -97,31 +97,17 @@ AI-powered cold outreach pipeline built in **n8n**. Reads a prospect's website, 
 <td width="50%" valign="top">
 
 ### 🌐 [Courlix](https://www.Courlix.com)
-The startup I founded. *(Add a one-line pitch here: what Courlix does and who it's for.)*
+The startup I founded and lead — taking ideas from zero to a real product, with AI and automation at the core of how it's built and run.
 
-`Founder` `Product` `AI`
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### 🤖 Project #3
-*(Your next strongest repo — an AI agent, a data analysis, an ML model. One sentence on the problem + one on the result.)*
-
-`tag` `tag` `tag`
-
-</td>
-<td width="50%" valign="top">
-
-### 📊 Project #4
-*(A data / ML project with a real result, e.g. "Predicted churn with 87% accuracy".)*
-
-`Python` `Pandas` `scikit-learn`
+`Founder` `Product` `AI` `Automation`
 
 </td>
 </tr>
 </table>
+
+<p align="center">
+  <a href="https://github.com/AbdAllah-237?tab=repositories"><img src="https://img.shields.io/badge/See%20all%20projects-00D4FF?style=for-the-badge&logo=github&logoColor=black"/></a>
+</p>
 
 ---
 
