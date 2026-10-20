@@ -202,6 +202,7 @@ def activity_card(s):
     days = list(s["days"].items())[-31:]
     vals = [v for _, v in days] or [0]
     mx = max(max(vals), 1)
+    mx = -(-mx // 4) * 4  # round up to a multiple of 4 so axis ticks are whole numbers
     L, R, T, B = 70, 40, 70, 56
     pw, ph = W - L - R, H - T - B
     step = pw / max(len(vals) - 1, 1)
