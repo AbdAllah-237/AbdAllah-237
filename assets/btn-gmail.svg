@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="117" height="46" viewBox="0 0 117 46" font-family="'Segoe UI', Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif">
+<defs>
+  <linearGradient id="grad" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#22D3EE"/><stop offset="1" stop-color="#A78BFA"/>
+  </linearGradient>
+  <linearGradient id="border" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#22D3EE" stop-opacity=".55"/>
+    <stop offset=".5" stop-color="#1F2A4D"/>
+    <stop offset="1" stop-color="#A78BFA" stop-opacity=".55"/>
+  </linearGradient></defs>
+<rect width="117" height="46" rx="14" fill="#111833"/><rect x=".75" y=".75" width="115.5" height="44.5" rx="13" fill="none" stroke="url(#border)" stroke-width="1.5"/>
+<g transform="translate(20,13) scale(.833)"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z" fill="#22D3EE"/></g>
+<text x="52" y="29" font-size="15" font-weight="700" fill="#E6EDF7">Email</text>
+</svg>

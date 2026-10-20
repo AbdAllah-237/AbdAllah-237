@@ -358,7 +358,68 @@ def about():
 </svg>"""
 
 
+# ─────────────────────────── typing line ─────────────────────────
+TYPING = ["I build AI systems that do real work",
+          "n8n • LLM Agents • APIs • Automation",
+          "From idea → architecture → production"]
+
+
+def typing():
+    W, H, SIZE, SLOT = 720, 44, 18, 4.0
+    T = SLOT * len(TYPING)
+    parts = []
+    for i, line in enumerate(TYPING):
+        w = len(line) * SIZE * 0.61
+        x0 = (W - w) / 2
+        s = i * SLOT
+        kt = [0, s, s + 1.5, s + 3.3, s + 3.8, T]
+        kt = ";".join(f"{min(max(k / T, 0), 1):.4f}" for k in kt)
+        if i == 0:  # first keyTimes pair collapses; keep strictly valid
+            kt = "0;0.0001;" + ";".join(kt.split(";")[2:])
+        widths = f"0;0;{w+4:.0f};{w+4:.0f};0;0"
+        xs = f"{x0:.0f};{x0:.0f};{x0+w+4:.0f};{x0+w+4:.0f};{x0:.0f};{x0:.0f}"
+        vis_kt = f"0;{s/T:.4f};{(s+SLOT)/T:.4f}" if i else f"0;{SLOT/T:.4f}"
+        vis_vals = "0;1;0" if i else "1;0"
+        parts.append(f"""
+<clipPath id="c{i}"><rect x="{x0:.0f}" y="0" width="0" height="{H}">
+  <animate attributeName="width" dur="{T}s" repeatCount="indefinite" keyTimes="{kt}" values="{widths}"/></rect></clipPath>
+<text x="{x0:.0f}" y="28" font-family="{MONO}" font-size="{SIZE}" font-weight="600" fill="{CYAN}" clip-path="url(#c{i})" xml:space="preserve">{esc(line)}</text>
+<rect x="{x0:.0f}" y="11" width="2.5" height="22" fill="{VIOLET}" opacity="0">
+  <animate attributeName="x" dur="{T}s" repeatCount="indefinite" keyTimes="{kt}" values="{xs}"/>
+  <animate attributeName="opacity" dur="{T}s" repeatCount="indefinite" calcMode="discrete" keyTimes="{vis_kt}" values="{vis_vals}"/>
+</rect>""")
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}">{''.join(parts)}
+</svg>"""
+
+
+# ─────────────────────────── buttons ─────────────────────────────
+BUTTONS = [("web", "Courlix.com"), ("linkedin", "LinkedIn"), ("x", "X / Twitter"), ("gmail", "Email")]
+
+
+def button(icon, label, primary=False):
+    import json
+    paths = json.load(open(os.path.join(ROOT, "scripts", "icons.json"), encoding="utf-8"))
+    H = 46
+    W = int(tw(label, 15, "semibold") + 76)
+    bg = "url(#grad)" if primary else CARD
+    fg = BG if primary else TEXT
+    ic = BG if primary else CYAN
+    stroke = "" if primary else f'<rect x=".75" y=".75" width="{W-1.5}" height="{H-1.5}" rx="13" fill="none" stroke="url(#border)" stroke-width="1.5"/>'
+    glyph = (f'<g transform="translate(20,13) scale(.833)"><path d="{paths[icon]}" fill="{ic}"/></g>' if icon in paths
+             else f'<path d="M22 23h10M28 18l5 5-5 5" stroke="{ic}" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round" transform="translate(-2,0)"/>')
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" font-family="{FONT}">
+<defs>{defs_common()}</defs>
+<rect width="{W}" height="{H}" rx="14" fill="{bg}"/>{stroke}
+{glyph}
+<text x="52" y="29" font-size="15" font-weight="700" fill="{fg}">{esc(label)}</text>
+</svg>"""
+
+
 if __name__ == "__main__":
+    save("typing.svg", typing())
+    for icon, label in BUTTONS:
+        save(f"btn-{icon}.svg", button(icon, label))
+    save("btn-cta.svg", button("linkedin", "Let's talk on LinkedIn", primary=True))
     save("hero.svg", hero())
     save("about.svg", about())
     save("timeline.svg", timeline())

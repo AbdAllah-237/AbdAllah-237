@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="44" viewBox="0 0 720 44">
+<clipPath id="c0"><rect x="162" y="0" width="0" height="44">
+  <animate attributeName="width" dur="12.0s" repeatCount="indefinite" keyTimes="0;0.0001;0.1250;0.2750;0.3167;1.0000" values="0;0;399;399;0;0"/></rect></clipPath>
+<text x="162" y="28" font-family="'JetBrains Mono', 'Fira Code', Consolas, 'Courier New', monospace" font-size="18" font-weight="600" fill="#22D3EE" clip-path="url(#c0)" xml:space="preserve">I build AI systems that do real work</text>
+<rect x="162" y="11" width="2.5" height="22" fill="#A78BFA" opacity="0">
+  <animate attributeName="x" dur="12.0s" repeatCount="indefinite" keyTimes="0;0.0001;0.1250;0.2750;0.3167;1.0000" values="162;162;562;562;162;162"/>
+  <animate attributeName="opacity" dur="12.0s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.3333" values="1;0"/>
+</rect>
+<clipPath id="c1"><rect x="162" y="0" width="0" height="44">
+  <animate attributeName="width" dur="12.0s" repeatCount="indefinite" keyTimes="0.0000;0.3333;0.4583;0.6083;0.6500;1.0000" values="0;0;399;399;0;0"/></rect></clipPath>
+<text x="162" y="28" font-family="'JetBrains Mono', 'Fira Code', Consolas, 'Courier New', monospace" font-size="18" font-weight="600" fill="#22D3EE" clip-path="url(#c1)" xml:space="preserve">n8n • LLM Agents • APIs • Automation</text>
+<rect x="162" y="11" width="2.5" height="22" fill="#A78BFA" opacity="0">
+  <animate attributeName="x" dur="12.0s" repeatCount="indefinite" keyTimes="0.0000;0.3333;0.4583;0.6083;0.6500;1.0000" values="162;162;562;562;162;162"/>
+  <animate attributeName="opacity" dur="12.0s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.3333;0.6667" values="0;1;0"/>
+</rect>
+<clipPath id="c2"><rect x="157" y="0" width="0" height="44">
+  <animate attributeName="width" dur="12.0s" repeatCount="indefinite" keyTimes="0.0000;0.6667;0.7917;0.9417;0.9833;1.0000" values="0;0;410;410;0;0"/></rect></clipPath>
+<text x="157" y="28" font-family="'JetBrains Mono', 'Fira Code', Consolas, 'Courier New', monospace" font-size="18" font-weight="600" fill="#22D3EE" clip-path="url(#c2)" xml:space="preserve">From idea → architecture → production</text>
+<rect x="157" y="11" width="2.5" height="22" fill="#A78BFA" opacity="0">
+  <animate attributeName="x" dur="12.0s" repeatCount="indefinite" keyTimes="0.0000;0.6667;0.7917;0.9417;0.9833;1.0000" values="157;157;567;567;157;157"/>
+  <animate attributeName="opacity" dur="12.0s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.6667;1.0000" values="0;1;0"/>
+</rect>
+</svg>
