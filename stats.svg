@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="590" height="240" viewBox="0 0 590 240" font-family="'Segoe UI', Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif">
+<defs>
+  <linearGradient id="grad" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#22D3EE"/><stop offset="1" stop-color="#A78BFA"/>
+  </linearGradient>
+  <linearGradient id="border" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#22D3EE" stop-opacity=".55"/>
+    <stop offset=".5" stop-color="#1F2A4D"/>
+    <stop offset="1" stop-color="#A78BFA" stop-opacity=".55"/>
+  </linearGradient>
+  <style>.fade{animation:fi .9s ease-out both}@keyframes fi{from{opacity:0}to{opacity:1}}</style>
+</defs>
+<rect x=".75" y=".75" width="588.5" height="238.5" rx="20" fill="#111833" stroke="url(#border)" stroke-width="1.5"/>
+<text x="32" y="42" font-size="18" font-weight="800" fill="#E6EDF7">GitHub Stats</text>
+<text x="558" y="42" font-family="'JetBrains Mono', 'Fira Code', Consolas, 'Courier New', monospace" font-size="12" fill="#22D3EE" text-anchor="end">@AbdAllah-237</text>
+<g class="fade" style="animation-delay:0.00s">
+  <rect x="32" y="64" width="167" height="76" rx="14" fill="#0E1530" stroke="#1F2A4D"/>
+  <text x="48" y="104" font-size="28" font-weight="800" fill="url(#grad)">9</text>
+  <text x="48" y="126" font-size="12.5" fill="#94A3B8"><tspan fill="#A78BFA">★</tspan>  Stars earned</text>
+</g><g class="fade" style="animation-delay:0.08s">
+  <rect x="211" y="64" width="167" height="76" rx="14" fill="#0E1530" stroke="#1F2A4D"/>
+  <text x="227" y="104" font-size="28" font-weight="800" fill="url(#grad)">91</text>
+  <text x="227" y="126" font-size="12.5" fill="#94A3B8"><tspan fill="#A78BFA">◆</tspan>  Commits (this year)</text>
+</g><g class="fade" style="animation-delay:0.16s">
+  <rect x="391" y="64" width="167" height="76" rx="14" fill="#0E1530" stroke="#1F2A4D"/>
+  <text x="407" y="104" font-size="28" font-weight="800" fill="url(#grad)">0</text>
+  <text x="407" y="126" font-size="12.5" fill="#94A3B8"><tspan fill="#A78BFA">⑂</tspan>  Pull requests</text>
+</g><g class="fade" style="animation-delay:0.24s">
+  <rect x="32" y="152" width="167" height="76" rx="14" fill="#0E1530" stroke="#1F2A4D"/>
+  <text x="48" y="192" font-size="28" font-weight="800" fill="url(#grad)">0</text>
+  <text x="48" y="214" font-size="12.5" fill="#94A3B8"><tspan fill="#A78BFA">●</tspan>  Issues</text>
+</g><g class="fade" style="animation-delay:0.32s">
+  <rect x="211" y="152" width="167" height="76" rx="14" fill="#0E1530" stroke="#1F2A4D"/>
+  <text x="227" y="192" font-size="28" font-weight="800" fill="url(#grad)">9</text>
+  <text x="227" y="214" font-size="12.5" fill="#94A3B8"><tspan fill="#A78BFA">▣</tspan>  Public repos</text>
+</g><g class="fade" style="animation-delay:0.40s">
+  <rect x="391" y="152" width="167" height="76" rx="14" fill="#0E1530" stroke="#1F2A4D"/>
+  <text x="407" y="192" font-size="28" font-weight="800" fill="url(#grad)">4</text>
+  <text x="407" y="214" font-size="12.5" fill="#94A3B8"><tspan fill="#A78BFA">♥</tspan>  Followers</text>
+</g>
+</svg>
